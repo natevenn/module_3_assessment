@@ -9,7 +9,7 @@ RSpec.feature 'user searches for product' do
 
 
       expect(current_path).to eq '/search'
-      expect(page).to have_content "Your search resulted in 15 items for sennheiser"
+      expect(page).to have_content "Your search resulted in 15 items"
       expect(page).to have_content 'Name: Sennheiser - Camera-Mount Wireless Microphone System - Black'
     end
 
@@ -22,6 +22,6 @@ RSpec.feature 'user searches for product' do
 
     expect(current_path).to eq '/search'
     save_and_open_page
-    expect(page).to have_content "Your search resulted in 15 items for sennheiser headphone white"
-    expect(page).to have_content 'Name: Sennheiser - Camera-Mount Wireless Microphone System - Black'
+    expect(page).to have_content 'Name: Sennheiser - CX 2.00G Earbud Headphones - White'
   end
+end
