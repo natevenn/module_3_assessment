@@ -6,6 +6,11 @@ class BestBuyItem
   end
 
   def search_items(keyword)
-    service.search_products_with_keyword(keyword)
+    format_keyword(keyword)
+    service.search_products_with_keyword(keyword).products
+  end
+
+  def format_keyword(keyword)
+    keyword.gsub!(" ", "%20")
   end
 end

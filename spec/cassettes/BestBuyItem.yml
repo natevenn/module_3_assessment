@@ -1,0 +1,309 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.bestbuy.com/v1/products(longDescription=iphone*)?apiKey=8zjkc9r7xng9wvqqjayyeya9&format=json&pageSize=15&show=name,salePrice,image,customerReviewAverage,shortDescription
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-04.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '6530'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 26 Apr 2016 16:19:41 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 15,
+          "total": 3001,
+          "currentPage": 1,
+          "totalPages": 201,
+          "queryTime": "0.005",
+          "totalTime": "0.035",
+          "partial": false,
+          "canonicalUrl": "/v1/products(longDescription=\"iphone*\")?show=name,salePrice,image,customerReviewAverage,shortDescription&format=json&apiKey=8zjkc9r7xng9wvqqjayyeya9",
+          "products": [
+            {
+              "name": "3D Systems - iSense Portable 3D Scanner - Black/White",
+              "salePrice": 499.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4290/4290920_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple&#174; iPhone&#174; 6Wireless network connectivityLightning portSnap-on designAuto-optimized settingsAutomatic object recognitionQuick cropping, enhancement and solidifying tools"
+            },
+            {
+              "name": "Adobe Creative Cloud Photography Plan (1-User) (1-Year Subscription) - Windows|Mac|iOS",
+              "salePrice": 119.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/8528/8528565_sa.jpg",
+              "customerReviewAverage": "4.6",
+              "shortDescription": "Enjoy powerful, industry-standard imaging tools"
+            },
+            {
+              "name": "Adobe Creative Cloud Photography Plan: Student and Teacher Edition (1-User) (1-Year Subscription) - Windows|Mac|iOS",
+              "salePrice": 119.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6639/6639021_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Enjoy powerful, industry-standard imaging tools"
+            },
+            {
+              "name": "Adonit - Back Cover for Apple iPhone 6 Plus and 6s Plus - Black, Graphite",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005555_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 Plus and 6s Plus; plastic material; scratch resistant"
+            },
+            {
+              "name": "Adonit - Back Cover for Apple iPhone 6 Plus and 6s Plus - Slate, Copper",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005557_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 Plus and 6s Plus; plastic material; scratch resistant"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Charcoal",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005565_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Gold",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005560_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Rose Gold",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005570_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Silver",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005569_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Mini Fine-Point Stylus - Rose Gold",
+              "salePrice": 19.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005562_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Windows, Apple iPad and iPhone; solid aluminum and steel body; Precision disc; carrying clip; protective cup"
+            },
+            {
+              "name": "Adonit - Jot Switch Fine-Point Stylus - Silver",
+              "salePrice": 39.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005566_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; Anodized aluminum body; Precision disc; 0.8mm ballpoint ink pen; carrying clip; protective cup; textured grip"
+            },
+            {
+              "name": "Adonit - Wallet Case Back Cover for Apple iPhone 6 and 6s - Black, Graphite",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005559_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; plastic material; scratch resistant"
+            },
+            {
+              "name": "Adonit - Wallet Case Back Cover for Apple iPhone 6 and 6s - Slate, Copper",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005556_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; plastic material; scratch resistant"
+            },
+            {
+              "name": "ADOPTED - Back Cover for Apple iPhone 6 and 6s - Black, Gold",
+              "salePrice": 39.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4869/4869401_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; genuine leather material; scratch resistant"
+            },
+            {
+              "name": "ADOPTED - Back Cover for Apple iPhone 6 and 6s - Gold, Blush",
+              "salePrice": 39.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4869/4869302_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; genuine leather material; scratch resistant"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 26 Apr 2016 16:19:41 GMT
+- request:
+    method: get
+    uri: http://api.bestbuy.com/v1/products(longDescription=iphone*)?apiKey=8zjkc9r7xng9wvqqjayyeya9&format=json&pageSize=15&show=name,salePrice,image,customerReviewAverage,shortDescription
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-04.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '6530'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 26 Apr 2016 16:19:52 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 15,
+          "total": 3001,
+          "currentPage": 1,
+          "totalPages": 201,
+          "queryTime": "0.005",
+          "totalTime": "0.035",
+          "partial": false,
+          "canonicalUrl": "/v1/products(longDescription=\"iphone*\")?show=name,salePrice,image,customerReviewAverage,shortDescription&format=json&apiKey=8zjkc9r7xng9wvqqjayyeya9",
+          "products": [
+            {
+              "name": "3D Systems - iSense Portable 3D Scanner - Black/White",
+              "salePrice": 499.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4290/4290920_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple&#174; iPhone&#174; 6Wireless network connectivityLightning portSnap-on designAuto-optimized settingsAutomatic object recognitionQuick cropping, enhancement and solidifying tools"
+            },
+            {
+              "name": "Adobe Creative Cloud Photography Plan (1-User) (1-Year Subscription) - Windows|Mac|iOS",
+              "salePrice": 119.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/8528/8528565_sa.jpg",
+              "customerReviewAverage": "4.6",
+              "shortDescription": "Enjoy powerful, industry-standard imaging tools"
+            },
+            {
+              "name": "Adobe Creative Cloud Photography Plan: Student and Teacher Edition (1-User) (1-Year Subscription) - Windows|Mac|iOS",
+              "salePrice": 119.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6639/6639021_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Enjoy powerful, industry-standard imaging tools"
+            },
+            {
+              "name": "Adonit - Back Cover for Apple iPhone 6 Plus and 6s Plus - Black, Graphite",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005555_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 Plus and 6s Plus; plastic material; scratch resistant"
+            },
+            {
+              "name": "Adonit - Back Cover for Apple iPhone 6 Plus and 6s Plus - Slate, Copper",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005557_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 Plus and 6s Plus; plastic material; scratch resistant"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Charcoal",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005565_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Gold",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005560_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Rose Gold",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005570_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Dash Fine-Point Stylus - Silver",
+              "salePrice": 49.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005569_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; anondized aluminum barrel with stainless steel details; Pixelpoint 1.9mm rubber tip; carrying clip; click on/off; power indicator"
+            },
+            {
+              "name": "Adonit - Jot Mini Fine-Point Stylus - Rose Gold",
+              "salePrice": 19.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005562_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Windows, Apple iPad and iPhone; solid aluminum and steel body; Precision disc; carrying clip; protective cup"
+            },
+            {
+              "name": "Adonit - Jot Switch Fine-Point Stylus - Silver",
+              "salePrice": 39.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005566_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with most touch-screen devices, including  Google Android, Apple iPad and iPhone; Anodized aluminum body; Precision disc; 0.8mm ballpoint ink pen; carrying clip; protective cup; textured grip"
+            },
+            {
+              "name": "Adonit - Wallet Case Back Cover for Apple iPhone 6 and 6s - Black, Graphite",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005559_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; plastic material; scratch resistant"
+            },
+            {
+              "name": "Adonit - Wallet Case Back Cover for Apple iPhone 6 and 6s - Slate, Copper",
+              "salePrice": 34.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5005/5005556_sa.jpg",
+              "customerReviewAverage": null,
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; plastic material; scratch resistant"
+            },
+            {
+              "name": "ADOPTED - Back Cover for Apple iPhone 6 and 6s - Black, Gold",
+              "salePrice": 39.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4869/4869401_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; genuine leather material; scratch resistant"
+            },
+            {
+              "name": "ADOPTED - Back Cover for Apple iPhone 6 and 6s - Gold, Blush",
+              "salePrice": 39.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4869/4869302_sa.jpg",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "Compatible with Apple iPhone 6 and 6s; genuine leather material; scratch resistant"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 26 Apr 2016 16:19:52 GMT
+recorded_with: VCR 3.0.1
