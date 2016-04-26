@@ -19,10 +19,10 @@ RSpec.describe 'BestBuyItem' do
     VCR.use_cassette 'BestBuyItemMultipleKeywords' do
       service = BestBuyItem.new
 
-      products = service.search_items('iphone white')
+      products = service.search_items('iphone LifeProof')
 
       products.each do |product|
-        boolean = product.shortDescription.includes?("white")
+        boolean = product.name.include?("LifeProof")
         expect(boolean).to eq true
       end
     end
