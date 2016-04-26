@@ -7,7 +7,21 @@ RSpec.feature 'user searches for product' do
       fill_in 'search', with: 'sennheiser'
       click_on 'Search'
 
+
       expect(current_path).to eq '/search'
-      expect(page).to have_content "Your search resulted in 15 items for Sennheiser"
+      expect(page).to have_content "Your search resulted in 15 items for sennheiser"
+      expect(page).to have_content 'Name: Sennheiser - Camera-Mount Wireless Microphone System - Black'
     end
+
+  scenario 'user visit home page and searches product with multiple keywords' do
+
+    visit '/'
+    fill_in 'search', with: 'sennheiser headphones white'
+    click_on 'Search'
+
+
+    expect(current_path).to eq '/search'
+    save_and_open_page
+    expect(page).to have_content "Your search resulted in 15 items for sennheiser headphone white"
+    expect(page).to have_content 'Name: Sennheiser - Camera-Mount Wireless Microphone System - Black'
   end

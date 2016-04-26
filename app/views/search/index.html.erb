@@ -1,17 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Your search resulted in <%= @items.count %> items for <%= @items.first.name %></h1>
+      <h1>Your search resulted in <%= @items.count %> items for <%= @search_name %></h1>
     </div>
   </div>
   <div class="row"></div>
   <% @items.each do |item| %>
     <div class="col-sm-12">
-      <h2>SKU: <%= item.sku%></h2>
-      <h5>Name: <%= item.name %></h5>
+      <h2>Name: <%= item.name %></h5>
+      <h5>SKU: <%= item.sku%></h2>
       <h5>Customer average review: <%= item.customerReviewAverage %></h5>
       <h5>Description: <%= item.shortDescription %></h5>
       <h5>Sale price: <%= item.salePrice %></h5>
-      <img src='item.image'>
+      <img src=<%= item.image %>>
     <% end %>
     </div>
